@@ -8,7 +8,7 @@ export const options = {
 };
 
 export default function () {
-  const res = http.get('https://reqres.in/api/users?page=2');
+  const res = http.get('https://www.demoblaze.com/');
   check(res, {
     'Status is 200': (r) => r.status === 200,
     'Body includes user data': (r) => r.body.includes('data'),
